@@ -1,0 +1,26 @@
+body {
+    margin: 0px;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+.top-container {
+    background-color: #e4f9f5;
+}
+
+.middle-container {
+    background-color: red;
+    height: 200px;
+    width: 200px;
+    border: solid 20px;
+}
+
+.last-container {
+    background-color: blue;
+    height: 100px;
+    width: 200px;
+    border: solid 10px;
+}
+
