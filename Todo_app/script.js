@@ -1,5 +1,3 @@
-
-
 let todoList = [];
 
 // Check local storage for existing todo list
