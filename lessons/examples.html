@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Arrays and loops</title>
+    </head>
+    <body>
+        <script>
+            /*let nums= [10,20,30];
+            nums[2] = 99;
+            console.log(nums);*/
+            /*myArray =[12,34,56];
+            myArray1 =[1,20,22,24,5];
+            myArray2 =['hi','hello','good'];
+
+            function getLastValue(array) {
+            
+                return array[array.length-1];
+            }
+
+            console.log(getLastValue(myArray));
+            console.log(getLastValue(myArray1));
+            console.log(getLastValue(myArray2));*/
+
+            /*function arraySwap(array) {
+                const lastValue = array[array.length-1];
+                const firstValue = array[0];
+
+                array[0] = lastValue;
+                array[array.length-1]= firstValue;
+
+                return array;
+            }
+
+            console.log(arraySwap([12,34,56,11]));
+            console.log(arraySwap(['good','girl','boy']));*/
+
+            /*for (let i=5; i >=0; i--) {
+                console.log(i);
+            }*/
+
+            /*let i=5;
+
+            while (i>=0) {
+                console.log(i)
+                i--;
+            }*/
+
+            
+            //const array = [-2,-1,0,99];
+            /*const newArray= [];
+
+            for (let i=0; i < array.length; i++) {
+                const newValue= array[i];
+                newArray.push(newValue + 1);
+            }
+
+            console.log(newArray);*/
+
+            /*function addOne(array) {
+                const newArray=[];
+                for (let i=0; i< array.length; i++) {
+                    const newValue = array[i];
+                    newArray.push(newValue +1);
+                }
+                console.log(newArray)
+            }
+
+            addOne(array);*/
+
+            /*function addNum (array, num) {
+                const newArray =[];
+                for (let i=0; i< array.length; i++) {
+                    const newValue= array[i];
+                    newArray.push(newValue +num); 
+                }
+                console.log(newArray);
+            }
+
+            addNum([1,2,3],2);*/
+            /*function addArrays(array1, array2) {
+                const newArray= [];
+                for (let i=0; i< array1.length && i< array2.length; i ++) {
+                    const newValue1 = array1[i];
+                    const newValue2 = array2[i];
+                    newArray.push(newValue1 + newValue2)
+                }
+                console.log(newArray);
+            }
+
+            addArrays([1,1,2],[1,2,3]);*/
+
+            /*function countPositive (nums) {
+                const newArray= [];
+                for (let i=0; i< nums.length; i ++) {
+                    const newValue = nums[i];
+                    if (newValue >0) {
+                        newArray.push(newValue);
+                    }
+                }
+                console.log(newArray);
+            }
+
+            countPositive([3,-3,4,-4,6]);*/
+
+            /*function minMax (nums) {
+                const result = {
+                    min :null,
+                    max : null
+                }
+
+                for (let i=0;i <nums.length; i++ ) {
+                    const newValue= nums[i];
+                   
+                    if (result.min === null || newValue < result.min) {
+                     result.min =newValue;
+                    }
+                    if (result.max === null || newValue > result.max) {
+                        result.max =newValue;
+                    }
+                }
+                console.log(result);
+            }
+
+            minMax([]);
+            minMax([3,4,5,33])*/
+
+            /*function countWords (words) {
+                result = { };
+                for (let i= 0; i< words.length; i++) {
+                    const word= words[i];
+
+                    if (!result[word]) {
+                        result[word] =1;
+                    } else {
+                        result[word]++;
+                    }
+                }
+                console.log(result);
+            }
+            countWords(['apple', 'grape','pineapple','apple', 'grape']);*/
+
+           /* for (let i=0; i <= 10; i++) {
+                
+                if ( i% 3 === 0){
+                    continue;
+                };
+                console.log(i);
+                if (i=== 8) {
+                    break;
+                }
+            }*/
+
+            /*let i = 0;
+            while (i <= 10) {
+                console.log(i);
+                i++;
+            }*/
+
+            function findIndex (array, word) {
+                for (let i= 0; i < array.length; i++) {
+                    if (array[i] === word) {
+                        return 
+                    }
+                }
+            }
+
+            
+/*let todoList = [
+    {name: 'Make dinner',
+    dueDate: '2024-06-07'}
+];
+
+renderTodoList();
+
+function renderTodoList () {
+    let todoListHTML ='';
+
+    for (let i=0; i < todoList.length; i++) {
+        const todoObject = todoList[i];
+        //const name =todoObject.name;
+        //const dueDate =todoObject.dueDate;
+        const {name, dueDate} = todoObject; 
+        const html = `
+            <div>${name}</div>
+            <div>${dueDate}</div>
+            <button onclick="
+            todoList.splice(${i}, 1);
+            renderTodoList(); 
+            " class="delete-button">Delete</button>`;
+        todoListHTML += html;
+    }
+
+    document.querySelector('.js-todo-list').innerHTML = todoListHTML;
+}
+
+function addTask() { 
+const inputElement =document.querySelector('.js-name-input'); 
+const name = inputElement.value;
+
+const dateInputElement = document.querySelector('.js-due-date-input');
+const dueDate = dateInputElement.value;
+
+todoList.push(
+    {
+        name,
+        dueDate
+    }
+);
+
+
+inputElement.value =''; //resets the textbox 
+
+renderTodoList();
+}
+
+function handleOnKeyDown (event) {
+if (event.key === 'Enter') {
+    addTask();
+}
+}*/
+
+        </script>
+    </body>
+</html>

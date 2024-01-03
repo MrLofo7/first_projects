@@ -3,19 +3,21 @@
     <head lang="en">
         <meta charset="utf-8">
         <title>Todo app</title>
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="style.css">
+        
     </head>
     <body>
-        <div class="container">
-            <h1>To-Do App</h1>
-            <div>
-                <input type="text" id="taskInput" placeholder="Enter your task" class="js-name-input" onkeydown="
-                    handleOnKeyDown(event)">
-                <button onclick="addTask()">Add Task</button>
+        
+        <h1>To-Do App</h1>
+        <div class="todo-input-grid">
+            <input type="text" placeholder="Enter your task" class="js-name-input name-input" onkeydown="
+                handleOnKeyDown(event)">
+            <input type="date" class="js-due-date-input due-date-input">
+            <button onclick="addTask()" class="add-task-button">Add Task</button>
 
-            </div>
-            <ul id="taskList"></ul>
         </div>
+        
+        <div class="js-todo-list todo-grid"></div>
     
         <script src="script.js"></script>
     </body>
