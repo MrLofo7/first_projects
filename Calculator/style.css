@@ -10,7 +10,7 @@ body {
     margin-bottom: 5px;
   }
   
-  .calculator-button {
+  .numeric-button, .clear-button, .equal-button, .operation-button, .point-button {
     height: 60px;
     width: 60px;
     border-radius: 60px;
@@ -30,6 +30,6 @@ body {
     color: white;
   }
   
-  .clear-button {
+  .Clear-button {
     font-size: 17px;
   }
